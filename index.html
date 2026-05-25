@@ -4,7 +4,93 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>0xawwal — Muhammad Awwal bin Mukhzar</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Security headers via meta -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph for LinkedIn preview -->
+  <meta property="og:title" content="Muhammad Awwal bin Mukhzar — IT Infrastructure Engineer">
+  <meta property="og:description" content="IT Infrastructure Engineer specialising in Network Security, Cloud & Cybersecurity. Based in KL, Malaysia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oxawwal.github.io">
+  <meta name="author" content="Muhammad Awwal bin Mukhzar">
+  <meta name="description" content="IT Infrastructure Engineer specialising in Network Security, Cloudflare WAF, FortiGate, and Cybersecurity. Based in Kuala Lumpur, Malaysia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+  /* Fallback fonts if Google Fonts fails to load */
+  body{font-family:'Inter','Segoe UI',system-ui,-apple-system,sans-serif}
+  .hero-name,.sh,.pj-num,.co-n,.hs-n,.nav-logo,.hire-btn,.exp-ro{font-family:'Syne','Segoe UI',system-ui,-apple-system,sans-serif}
+  .term,.term-body,.eyebrow,.sk-c,.exp-dt,.exp-co,.h-eyebrow,.mq-item,.hs-l,.lang-btn,.vtab,.stab,.cr-name,.cx-ml,.dlbl,.blab,.cl-l,.ft-l,.ft-r,.cv-note,.ab-txt,.pj-st,.ptag,.tag,.adot,.avail,.hero-avail{font-family:'JetBrains Mono','Courier New',monospace}
+  
+/* ── PERSONAL SECTION (Languages + Hobbies) ── */
+.personal-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+
+/* Languages */
+.lang-list{display:flex;flex-direction:column;gap:16px}
+.lang-item{display:grid;grid-template-columns:36px 1fr 80px 44px;align-items:center;gap:12px;padding:14px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;transition:background .2s}
+.lang-item:hover{background:var(--bg3)}
+.lang-flag{font-size:22px;text-align:center}
+.lang-name{font-family:'Syne',sans-serif;font-size:14px;font-weight:700}
+.lang-level{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--text2);margin-top:2px}
+.lang-bar-wrap{height:3px;background:var(--border);border-radius:2px;overflow:hidden}
+.lang-bar-fill{height:100%;background:var(--orange);border-radius:2px}
+.lang-pct{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--orange);font-weight:700;text-align:right}
+
+/* Hobbies */
+.hobby-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hobby-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 16px;transition:all .25s;position:relative;overflow:hidden}
+.hobby-card::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--orange);transition:width .3s ease}
+.hobby-card:hover{background:var(--bg3);border-color:var(--border2)}.hobby-card:hover::after{width:100%}
+.hobby-ico{font-size:24px;margin-bottom:10px}
+.hobby-name{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;margin-bottom:6px}
+.hobby-desc{font-size:12px;color:var(--text2);line-height:1.6}
+
+/* Mobile */
+@media(max-width:768px){
+  .personal-grid{grid-template-columns:1fr;gap:40px}
+  .hobby-grid{grid-template-columns:1fr 1fr}
+  .lang-item{grid-template-columns:30px 1fr 60px 36px;gap:8px;padding:12px}
+}
+@media(max-width:480px){
+  .hobby-grid{grid-template-columns:1fr}
+  .lang-item{grid-template-columns:28px 1fr;gap:8px}
+  .lang-bar-wrap,.lang-pct{display:none}
+}
+
+
+/* ── EDUCATION CARDS (gempak style) ── */
+.edu-grid{display:flex;flex-direction:column;gap:0}
+.edu-card{display:grid;grid-template-columns:180px 1fr;gap:28px;border-top:1px solid var(--border);padding:26px 0;transition:background .2s,padding .2s,margin .2s;position:relative}
+.edu-card:last-child{border-bottom:1px solid var(--border)}
+.edu-card:hover{background:var(--bg2);margin:0 -40px;padding-left:40px;padding-right:40px}
+.edu-dt{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text2);line-height:1.8;padding-top:3px}
+.edu-badge{display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;padding:3px 8px;border-radius:4px;margin-bottom:6px}
+.edu-deg{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;letter-spacing:-.3px;margin-bottom:4px}
+.edu-inst{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--orange);font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px}
+.edu-focus{font-size:13px;color:var(--text2);line-height:1.65;margin-bottom:10px}
+.edu-num{font-family:'Syne',sans-serif;font-size:52px;font-weight:800;color:var(--text3);letter-spacing:-2px;position:absolute;right:0;top:20px;line-height:1}
+@media(max-width:768px){
+  .edu-card{grid-template-columns:1fr;gap:8px}
+  .edu-card:hover{margin:0;padding:26px 0}
+  .edu-num{font-size:36px;top:16px}
+}
+
+
+/* ── HERO MOBILE HEIGHT FIX ── */
+@media (max-width: 900px) {
+  .hero{
+    min-height:auto !important;
+    padding-top:100px !important;
+    padding-bottom:40px !important;
+    justify-content:flex-start !important;
+  }
+  .h-glow{display:none}
+}
+
+</style>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 [data-theme="dark"]{
@@ -16,12 +102,12 @@
   --card:#0d0d0d;--nav-bg:rgba(7,7,7,0.92);
 }
 [data-theme="light"]{
-  --bg:#f8f5f0;--bg2:#efecea;--bg3:#e4e0d8;--bg4:#d8d4cc;
-  --border:#e0dbd0;--border2:#ccc8be;--border3:#b0a898;
-  --text:#0e0c09;--text2:#7a7060;--text3:#ccc8be;
-  --orange:#d97706;--orange2:#b45309;--odim:rgba(217,119,6,.08);
+  --bg:#ffffff;--bg2:#f5f5f5;--bg3:#eeeeee;--bg4:#e5e5e5;
+  --border:#e8e8e8;--border2:#d4d4d4;--border3:#b8b8b8;
+  --text:#0a0a0a;--text2:#555555;--text3:#cccccc;
+  --orange:#e08000;--orange2:#c47000;--odim:rgba(224,128,0,.08);
   --green:#16a34a;--red:#dc2626;--blue:#2563eb;
-  --card:#fff;--nav-bg:rgba(248,245,240,0.94);
+  --card:#ffffff;--nav-bg:rgba(255,255,255,0.95);
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s,color .4s;cursor:none}
@@ -318,131 +404,83 @@ footer{padding:26px 40px;border-top:1px solid var(--border);display:flex;justify
 /* MAGNETIC */
 .mag{display:inline-block;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
 
-/* ═══════════════════════════════
-   MOBILE RESPONSIVE
-   ═══════════════════════════════ */
-@media (max-width: 768px) {
-
-  /* Hide custom cursor on touch */
-  #cur,#cur-ring{display:none}
-  body{cursor:auto}
-
-  /* ── ANNOUNCEMENT BAR ── */
-  .ab-txt{font-size:10px;letter-spacing:0;padding:0 32px;text-align:center}
-
-  /* ── NAV ── */
-  nav{
-    grid-template-columns:1fr auto;
-    padding:0 20px;
-    height:52px;
-  }
-  .nav-links{display:none} /* Hidden on mobile — burger menu below */
-  .nav-right{gap:6px}
-  .hire-btn{padding:6px 12px;font-size:10px}
-  .lang-btn{padding:4px 8px;font-size:9px}
-
-  /* ── MOBILE NAV DRAWER ── */
-  .mob-menu-btn{
-    display:flex;flex-direction:column;gap:4px;
-    background:none;border:1px solid var(--border2);
-    padding:7px 9px;border-radius:5px;cursor:pointer;
-  }
-  .mob-menu-btn span{width:16px;height:1.5px;background:var(--text);display:block;transition:all .25s}
-  .mob-menu-btn.open span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
-  .mob-menu-btn.open span:nth-child(2){opacity:0}
-  .mob-menu-btn.open span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
-
-  .mob-nav{
-    position:fixed;top:86px;left:0;right:0;bottom:0;z-index:550;
-    background:var(--bg);border-top:1px solid var(--border);
-    display:flex;flex-direction:column;padding:32px 24px;gap:4px;
-    transform:translateX(100%);transition:transform .35s cubic-bezier(.16,1,.3,1);
-  }
-  .mob-nav.open{transform:translateX(0)}
-  .mob-nav a{
-    font-family:'Syne',sans-serif;font-size:28px;font-weight:800;
-    color:var(--text2);text-decoration:none;letter-spacing:-1px;
-    padding:10px 0;border-bottom:1px solid var(--border);
-    transition:color .2s;
-  }
-  .mob-nav a:hover{color:var(--orange)}
-  .mob-nav a:last-child{border-bottom:none}
-
-  /* ── HERO ── */
-  .hero{padding:20px 20px 40px;padding-top:86px;min-height:auto}
-  .hero-inner{
-    grid-template-columns:1fr !important;
-    gap:32px;
-  }
-  .hero-right{order:-1} /* Photo + terminal on top on mobile */
-  .h-name{font-size:clamp(38px,10vw,56px);letter-spacing:-2px}
-  .h-name .l2{font-size:clamp(28px,8vw,44px)}
-  .h-name .l3{font-size:clamp(18px,5vw,26px);letter-spacing:-1px}
-  .h-eyebrow{font-size:9px;letter-spacing:2px}
-  .h-bottom{flex-direction:column;gap:16px}
-  .h-role{font-size:10px}
-  .h-stats{justify-content:flex-start}
-
-  /* Photo + terminal side by side on mobile */
-  .hero-right{flex-direction:row;gap:12px;align-items:flex-start}
-  .hero-photo{width:100%;max-width:130px;height:170px}
+/* ── MOBILE FIX v2 ── */
+@media (max-width: 900px) {
+  .hero-inner{grid-template-columns:1fr !important; gap:28px}
+  .hero-right{flex-direction:column; gap:14px}
+  .hero-photo{max-width:160px; height:200px}
+  .term{font-size:10px}
+  .term-body{padding:12px 14px; line-height:1.8}
+  nav{grid-template-columns: 1fr auto !important}
+  .nav-links{display:none !important}
+  .mob-menu-btn{display:none;display:flex !important}
+}
+@media (max-width: 600px) {
+  .hero{padding:12px 16px 36px; padding-top:86px}
+  .hero-right{flex-direction:row; align-items:flex-start; gap:10px}
   .hero-photo-wrap{flex-shrink:0}
-  .term{flex:1;font-size:9.5px}
-  .term-body{padding:10px 12px;line-height:1.75}
-
-  /* ── SECTIONS ── */
-  section{padding:56px 20px}
-  .sh{font-size:clamp(22px,6vw,34px);letter-spacing:-1px}
-
-  /* ── STACK ── */
-  .sk-grid{grid-template-columns:repeat(2,1fr)}
-
-  /* ── EXPERIENCE ── */
-  .exp-i{grid-template-columns:1fr;gap:8px}
-  .exp-dt{font-size:9px;padding-top:0;border-bottom:1px solid var(--border);padding-bottom:8px}
-  .exp-i:hover{margin:0;padding:26px 0}
-
-  /* ── CERT OVERVIEW ── */
-  .co-grid{grid-template-columns:repeat(3,1fr)}
-  .co-grid .co-cell:nth-child(4),.co-grid .co-cell:nth-child(5){display:none} /* hide last 2 on mobile */
-  .v-tabs{flex-wrap:wrap;border:none;border-radius:0;gap:4px;width:100%}
-  .vtab{border:1px solid var(--border);border-radius:5px !important;font-size:9px;padding:5px 10px}
-
-  /* CERT TABLE — simplified on mobile */
-  .cert-row{grid-template-columns:32px 1fr auto}
-  .cr-dots{display:none} /* hide dots, show on expand */
-  .cr-cost{min-width:68px;padding:10px 10px}
+  .hero-photo{max-width:110px; height:145px; border-radius:8px}
+  .hero-photo-tag{display:none}
+  .term{font-size:9px}
+  .term-body{padding:10px 11px; line-height:1.75}
+  .h-name{font-size:clamp(34px,9vw,52px); letter-spacing:-2px}
+  .h-name .l2{font-size:clamp(24px,7vw,38px)}
+  .h-name .l3{font-size:clamp(15px,4.5vw,22px); letter-spacing:-0.5px}
+  .h-eyebrow{font-size:8px; letter-spacing:1.5px}
+  .h-role{font-size:9.5px; padding-left:10px}
+  .h-bottom{margin-top:16px; gap:12px}
+  .hs-n{font-size:20px}
+  .hs-l{font-size:8px}
+  section{padding:48px 16px}
+  .sh{letter-spacing:-0.8px}
+  .sk-grid{grid-template-columns:1fr 1fr}
+  .sk-cell{padding:16px 13px}
+  .sk-n{font-size:12px}
+  .sk-c{font-size:9px}
+  .exp-i{padding:20px 0}
+  .exp-ro{font-size:14px}
+  .exp-de{font-size:12px}
+  .cert-row{grid-template-columns:28px 1fr auto}
+  .cr-num{font-size:9px}
+  .cr-name{font-size:11px}
   .cr-cv{font-size:13px}
-  .cr-main{padding:11px 12px}
-  .cr-name{font-size:12px}
   .cx-meta{grid-template-columns:1fr 1fr}
-  .cx-bars{grid-template-columns:1fr}
-
-  /* ── PROJECTS ── */
   .proj-grid{grid-template-columns:1fr}
-  .pj-num{font-size:32px}
-
-  /* ── CONTACT ── */
-  .ct-grid{grid-template-columns:1fr;gap:32px}
-  .cl-v{font-size:12px}
-
-  /* ── MARQUEE ── */
-  .mq-item{font-size:10px}
-
-  /* ── FOOTER ── */
-  footer{flex-direction:column;align-items:flex-start;gap:6px;padding:20px}
-  .ft-l,.ft-r{font-size:10px}
+  .pj{padding:20px 18px}
+  .pj-num{font-size:36px}
+  .ct-grid{grid-template-columns:1fr}
+  .v-tabs{gap:4px; width:100%}
+  .vtab{font-size:9px; padding:5px 9px}
+  .co-grid{grid-template-columns:repeat(3,1fr)}
+  footer{padding:20px 16px}
+  .ft-l,.ft-r{font-size:9px}
+  .marquee-wrap{padding:9px 0}
+  .mq-item{font-size:9.5px; gap:20px; padding:0 20px}
+  /* Announcement bar */
+  .ab-txt{font-size:9.5px; padding:0 36px; text-align:center; line-height:1.4}
+  #abar{height:auto; min-height:32px; padding:6px 0}
+  nav{top:auto}
+}
+/* Ensure mob-menu-btn hidden on desktop */
+@media (min-width: 769px) {
+  .mob-menu-btn{display:none;display:none !important}
 }
 
-@media (max-width: 480px) {
-  .h-name{font-size:clamp(32px,9vw,46px)}
-  .hero-right{flex-direction:column}
-  .hero-photo{max-width:100%;height:200px;object-fit:cover;object-position:top center}
-  .hero-photo-wrap{width:100%}
-  .sk-grid{grid-template-columns:repeat(2,1fr)}
-  .co-grid{grid-template-columns:repeat(2,1fr)}
-  .nav-right .lang-wrap{display:none} /* hide lang on very small, accessible via menu */
-}
+
+/* ── EXPANDABLE PROJECTS ── */
+.pj{cursor:pointer; user-select:none}
+.pj-expand{display:none; margin-top:14px; padding-top:14px; border-top:1px solid var(--border); animation:ex .2s ease}
+.pj.open .pj-expand{display:block}
+.pj-expand p{font-size:12px; color:var(--text2); line-height:1.7; margin-bottom:10px}
+.pj-link{display:inline-flex; align-items:center; gap:6px; font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--orange); text-decoration:none; border-bottom:1px solid rgba(255,149,0,.3); padding-bottom:1px; transition:border-color .2s}
+.pj-link:hover{border-color:var(--orange)}
+.pj-arrow{font-size:10px; transition:transform .25s}
+.pj.open .pj-arrow{transform:rotate(90deg)}
+.pj h3{display:flex; justify-content:space-between; align-items:center}
+
+/* ── CERT CREDLY LINKS ── */
+.cr-credly{display:inline-flex;align-items:center;gap:4px;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--orange);text-decoration:none;margin-top:6px;border-bottom:1px solid rgba(255,149,0,.25);padding-bottom:1px;transition:border-color .2s}
+.cr-credly:hover{border-color:var(--orange)}
 
 </style>
 </head>
@@ -475,6 +513,8 @@ footer{padding:26px 40px;border-top:1px solid var(--border);display:flex;justify
     <a href="#experience" class="mag" data-key="nav_exp">Experience</a>
     <a href="#certs"      class="mag" data-key="nav_certs">Certs</a>
     <a href="#projects"   class="mag" data-key="nav_proj">Labs</a>
+    <a href="#education"  class="mag" data-key="nav_edu">Edu</a>
+    <a href="#personal"   class="mag" data-key="nav_about2">About</a>
     <a href="#contact"    class="mag" data-key="nav_contact">Contact</a>
   </div>
 
@@ -503,6 +543,8 @@ footer{padding:26px 40px;border-top:1px solid var(--border);display:flex;justify
   <a href="#experience" onclick="closeMobNav()" data-key="nav_exp">Experience</a>
   <a href="#certs"      onclick="closeMobNav()" data-key="nav_certs">Certs</a>
   <a href="#projects"   onclick="closeMobNav()" data-key="nav_proj">Labs</a>
+  <a href="#education"   onclick="closeMobNav()" data-key="nav_edu">Education</a>
+  <a href="#personal"    onclick="closeMobNav()" data-key="nav_about2">About</a>
   <a href="#contact"    onclick="closeMobNav()" data-key="nav_contact">Contact</a>
 </div>
 
@@ -560,7 +602,7 @@ footer{padding:26px 40px;border-top:1px solid var(--border);display:flex;justify
 {<br>
 &nbsp;&nbsp;<span class="tk">"name"</span>: <span class="ts">"Muhammad Awwal bin Mukhzar"</span>,<br>
 &nbsp;&nbsp;<span class="tk">"alias"</span>: <span class="ts">"0xawwal"</span>,<br>
-&nbsp;&nbsp;<span class="tk">"role"</span>: <span class="ts">"IT Infra Engineer | Network &amp; Cybersecurity"</span>,<br>
+&nbsp;&nbsp;<span class="tk">"role"</span>: <span class="ts">"IT Infra Engineer | Network &amp; Cybersecurity &amp; Cloud"</span>,<br>
 &nbsp;&nbsp;<span class="tk">"company"</span>: <span class="ts">"Rakuten Trade Sdn. Bhd."</span>,<br>
 &nbsp;&nbsp;<span class="tk">"stack"</span>: [<span class="ts">"FortiGate"</span>, <span class="ts">"Cloudflare"</span>, <span class="ts">"KEMP WAF"</span>],<br>
 &nbsp;&nbsp;<span class="tk">"certs"</span>: {<br>
@@ -582,8 +624,8 @@ footer{padding:26px 40px;border-top:1px solid var(--border);display:flex;justify
 <!-- MARQUEE TICKER -->
 <div class="marquee-wrap">
   <div class="marquee-track">
-    <div class="mq-item">FortiGate NGFW <span class="mq-dot">✦</span> Cloudflare WAF <span class="mq-dot">✦</span> KEMP ModSecurity <span class="mq-dot">✦</span> Nginx Reverse Proxy <span class="mq-dot">✦</span> Linux RHEL <span class="mq-dot">✦</span> Peplink SD-WAN <span class="mq-dot">✦</span> Burp Suite <span class="mq-dot">✦</span> NSE4 in progress <span class="mq-dot">✦</span> BCP / DR <span class="mq-dot">✦</span> Log4Shell Triage <span class="mq-dot">✦</span></div>
-    <div class="mq-item">FortiGate NGFW <span class="mq-dot">✦</span> Cloudflare WAF <span class="mq-dot">✦</span> KEMP ModSecurity <span class="mq-dot">✦</span> Nginx Reverse Proxy <span class="mq-dot">✦</span> Linux RHEL <span class="mq-dot">✦</span> Peplink SD-WAN <span class="mq-dot">✦</span> Burp Suite <span class="mq-dot">✦</span> NSE4 in progress <span class="mq-dot">✦</span> BCP / DR <span class="mq-dot">✦</span> Log4Shell Triage <span class="mq-dot">✦</span></div>
+    <div class="mq-item">FortiGate NGFW <span class="mq-dot">✦</span> Cloudflare WAF <span class="mq-dot">✦</span> KEMP ModSecurity <span class="mq-dot">✦</span> Nginx Reverse Proxy <span class="mq-dot">✦</span> Linux RHEL <span class="mq-dot">✦</span> Peplink SD-WAN <span class="mq-dot">✦</span> Burp Suite <span class="mq-dot">✦</span> NSE4 in progress <span class="mq-dot">✦</span> BCP / DR <span class="mq-dot">✦</span> WAF Monitoring & Tuning <span class="mq-dot">✦</span></div>
+    <div class="mq-item">FortiGate NGFW <span class="mq-dot">✦</span> Cloudflare WAF <span class="mq-dot">✦</span> KEMP ModSecurity <span class="mq-dot">✦</span> Nginx Reverse Proxy <span class="mq-dot">✦</span> Linux RHEL <span class="mq-dot">✦</span> Peplink SD-WAN <span class="mq-dot">✦</span> Burp Suite <span class="mq-dot">✦</span> NSE4 in progress <span class="mq-dot">✦</span> BCP / DR <span class="mq-dot">✦</span> WAF Monitoring & Tuning <span class="mq-dot">✦</span></div>
   </div>
 </div>
 
@@ -604,6 +646,10 @@ footer{padding:26px 40px;border-top:1px solid var(--border);display:flex;justify
       <div class="sk-cell"><div class="sk-ico">📡</div><div class="sk-n">Peplink</div><div class="sk-c">SD-WAN · Link Bonding</div><div class="sk-pct">70%</div><div class="sk-bar"><div class="sk-fill" data-w="70"></div></div></div>
       <div class="sk-cell"><div class="sk-ico">🔍</div><div class="sk-n">Burp Suite</div><div class="sk-c">Web App Pentesting</div><div class="sk-pct">55%</div><div class="sk-bar"><div class="sk-fill" data-w="55" style="background:#f59e0b"></div></div></div>
       <div class="sk-cell"><div class="sk-ico">📊</div><div class="sk-n">FortiAnalyzer</div><div class="sk-c">SIEM · Log Management</div><div class="sk-pct">65%</div><div class="sk-bar"><div class="sk-fill" data-w="65"></div></div></div>
+      <div class="sk-cell"><div class="sk-ico">🖥️</div><div class="sk-n">Termius</div><div class="sk-c">SSH · Terminal · DevOps</div><div class="sk-pct">85%</div><div class="sk-bar"><div class="sk-fill" data-w="85" style="background:#6366f1"></div></div></div>
+      <div class="sk-cell"><div class="sk-ico">🛡️</div><div class="sk-n">Sophos</div><div class="sk-c">UTM · Endpoint Security</div><div class="sk-pct">65%</div><div class="sk-bar"><div class="sk-fill" data-w="65" style="background:#22c55e"></div></div></div>
+      <div class="sk-cell"><div class="sk-ico">🔀</div><div class="sk-n">Huawei Switches</div><div class="sk-c">Enterprise Networking · VRP</div><div class="sk-pct">70%</div><div class="sk-bar"><div class="sk-fill" data-w="70" style="background:#e11d48"></div></div></div>
+      <div class="sk-cell"><div class="sk-ico">🌐</div><div class="sk-n">Cisco Router/Switch</div><div class="sk-c">IOS · L2/L3 · BGP · OSPF</div><div class="sk-pct">72%</div><div class="sk-bar"><div class="sk-fill" data-w="72" style="background:#1ba0d7"></div></div></div>
     </div>
   </div>
 </section>
@@ -617,32 +663,61 @@ footer{padding:26px 40px;border-top:1px solid var(--border);display:flex;justify
     <h2 class="sh rev" data-key="exp_h">Where I've worked</h2>
     <div class="exp-list rev">
       <div class="exp-i">
-        <div class="exp-dt">2022 — Present<br>Kuala Lumpur, MY</div>
+        <div class="exp-dt">2023 — Present<br>Kuala Lumpur, MY</div>
         <div>
           <div class="exp-co">Rakuten Trade Sdn. Bhd.</div>
           <div class="exp-ro">IT Infrastructure Engineer · Network &amp; Cybersecurity &amp; Cloud</div>
-          <div class="exp-de">Manage network security perimeter (FortiGate, KEMP WAF, Cloudflare), BCP/DR failover, production incident triage. Architected Cloudflare DNS failover for DR site. Triaged live Log4Shell CVE-2021-44228 on production WAF. Linux RHEL sysadmin, NAS mounting, Nginx upstream debugging.</div>
-          <div class="tags"><span class="tag">FortiGate</span><span class="tag">KEMP WAF</span><span class="tag">Cloudflare</span><span class="tag">Nginx</span><span class="tag">RHEL</span><span class="tag">BCP/DR</span><span class="tag">ITSM</span><span class="tag">Peplink</span></div>
+          <div class="exp-de">Support critical trading infrastructure at a SC &amp; Bursa Malaysia regulated platform — where downtime carries direct business and regulatory consequences. Designed Cloudflare DNS failover for DR and built observability stack (Icinga2, Grafana, Prometheus) across 20+ nodes. Led annual DR exercises aligned to ISO 27001 &amp; ITIL 4, including Bursa Malaysia DR participation. Manage FortiGate &amp; Sophos firewall policy lifecycle, enforce server hardening, and conduct access control audits across AD and physical systems. Led AD Tech Refresh migrating 200+ users with zero downtime. Produce ITSM-aligned shift handover reports used as primary evidence during ISO compliance reviews.</div>
+          <div class="tags"><span class="tag">FortiGate</span><span class="tag">Sophos</span><span class="tag">Cloudflare</span><span class="tag">Peplink SD-WAN</span><span class="tag">Icinga2</span><span class="tag">Grafana</span><span class="tag">Active Directory</span><span class="tag">ISO 27001</span><span class="tag">ITIL 4</span><span class="tag">Bursa Malaysia DR</span></div>
         </div>
       </div>
       <div class="exp-i">
-        <div class="exp-dt">2020 — 2022<br>Kuala Lumpur, MY</div>
+        <div class="exp-dt">Dec 2019 — Jul 2023<br>Kuala Lumpur, MY</div>
         <div>
-          <div class="exp-co">Mesiniaga Bhd. (Astro Malaysia)</div>
-          <div class="exp-ro">Network &amp; Systems Engineer</div>
-          <div class="exp-de">Network and systems support for Astro Malaysia broadcast infrastructure. Enterprise networking, server ops, vendor coordination across Cisco and Microsoft environments.</div>
-          <div class="tags"><span class="tag">Cisco</span><span class="tag">Windows Server</span><span class="tag">VMware</span><span class="tag">Network Ops</span></div>
+          <div class="exp-co">Mesiniaga Berhad · Astro Malaysia</div>
+          <div class="exp-ro">NOC Engineer</div>
+          <div class="exp-de">Operated 24/7 rotational NOC supporting Astro's national fiber broadband network — uptime directly impacts hundreds of thousands of subscribers across Malaysia. Monitored ISP core network covering IP Transit, BGP stability, and last-mile fiber using Huawei NCE, Grafana, InfluxDB, Nagios, and ELK stack. Managed ITIL-aligned P1/P2 incident workflows with escalation to Huawei principal team and MCMC where required. Processed 500+ CPE activations per quarter with &lt;1% rollback rate. Prior to NOC: progressed through IT Support covering government &amp; corporate sites — JPN, JPJ, EPF, MIDA, Panasonic, and SPRM HQ.</div>
+          <div class="tags"><span class="tag">Huawei NCE</span><span class="tag">BGP</span><span class="tag">Grafana</span><span class="tag">ELK Stack</span><span class="tag">Nagios</span><span class="tag">ITIL</span><span class="tag">FortiGate</span><span class="tag">F5</span><span class="tag">VMware</span><span class="tag">Cisco ISE</span></div>
         </div>
       </div>
-      <div class="exp-i">
-        <div class="exp-dt">2023 — Present<br>UTM Johor</div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="eyebrow rev">Education</div>
+    <h2 class="sh rev" data-key="edu_h">Academic Background</h2>
+    <div class="edu-grid rev">
+
+      <div class="edu-card">
+        <div class="edu-dt">2025 — Present<br>Kuala Lumpur, MY<br><br>Part-time<br>whilst working</div>
         <div>
-          <div class="exp-co">Universiti Teknologi Malaysia</div>
-          <div class="exp-ro">Bachelor of CS — Networking &amp; Cybersecurity</div>
-          <div class="exp-de">Part-time undergraduate while working full-time. Focus: network security, cryptography, ethical hacking, cloud infrastructure.</div>
-          <div class="tags"><span class="tag">Networking</span><span class="tag">Cybersecurity</span><span class="tag">Cloud</span><span class="tag">Cryptography</span></div>
+          <div class="edu-num">02</div>
+          <span class="edu-badge" style="background:rgba(255,149,0,.1);color:var(--orange);border:1px solid rgba(255,149,0,.25)">🎓 Degree · Ongoing</span>
+          <div class="edu-deg">Bachelor of Computer Science</div>
+          <div class="edu-inst">Universiti Teknologi Malaysia</div>
+          <div class="edu-focus">Specialisation in <strong style="color:var(--text)">Networking &amp; Cybersecurity</strong> — network security architecture, cryptography, ethical hacking, and cloud infrastructure. Pursued part-time while working full-time in IT infrastructure.</div>
+          <div class="tags"><span class="tag">Network Security</span><span class="tag">Cryptography</span><span class="tag">Ethical Hacking</span><span class="tag">Cloud Infrastructure</span><span class="tag">Kali Linux</span><span class="tag">Python</span><span class="tag">OS Hardening</span></div>
         </div>
       </div>
+
+      <div class="edu-card">
+        <div class="edu-dt">2017 — 2020<br>Ipoh, Perak<br><br>Full-time</div>
+        <div>
+          <div class="edu-num">01</div>
+          <span class="edu-badge" style="background:rgba(34,197,94,.1);color:var(--green);border:1px solid rgba(34,197,94,.25)">✓ Diploma · Completed</span>
+          <div class="edu-deg">Diploma in Digital Technology</div>
+          <div class="edu-inst">Politeknik Ungku Omar, Ipoh</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--text2);margin-bottom:8px">Focus — Computer Networking</div>
+          <div class="edu-focus">Foundation in <strong style="color:var(--text)">network infrastructure and digital systems</strong> — TCP/IP, routing &amp; switching, network design, and enterprise infrastructure management. Built the technical groundwork that launched a career in IT infrastructure and network security.</div>
+          <div class="tags"><span class="tag">TCP/IP</span><span class="tag">Routing &amp; Switching</span><span class="tag">Network Design</span><span class="tag">Digital Systems</span></div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -677,15 +752,145 @@ footer{padding:26px 40px;border-top:1px solid var(--border);display:flex;justify
     <h2 class="sh rev" data-key="proj_h">Hands-on work</h2>
     <p class="sp rev" data-key="proj_p">Real-world incidents, lab builds, and ongoing research. More coming soon.</p>
     <div class="proj-grid stag rev">
-      <div class="pj"><div class="pj-num">01</div><div class="pj-st sl">live</div><h3>Cloudflare DR DNS Failover</h3><p>Automatic DNS failover for Rakuten Trade DR site using Cloudflare Load Balancer with health checks and geo-routing.</p><div class="ptags"><span class="ptag">Cloudflare</span><span class="ptag">DNS</span><span class="ptag">BCP/DR</span></div></div>
-      <div class="pj"><div class="pj-num">02</div><div class="pj-st sd">triaged</div><h3>Log4Shell Exploit Triage</h3><p>Detected &amp; triaged live CVE-2021-44228 on production WAF. Blocked JNDI callback via ModSecurity, full incident documentation.</p><div class="ptags"><span class="ptag">CVE-2021-44228</span><span class="ptag">KEMP WAF</span><span class="ptag">ModSecurity</span></div></div>
-      <div class="pj"><div class="pj-num">03</div><div class="pj-st sw">ongoing</div><h3>PortSwigger Web Security Labs</h3><p>Working through PortSwigger Academy — SQL injection, auth bypass, XSS, IDOR, SSRF with Burp Suite.</p><div class="ptags"><span class="ptag">Burp Suite</span><span class="ptag">SQLi</span><span class="ptag">XSS</span></div></div>
-      <div class="pj"><div class="pj-num">04</div><div class="pj-st sw">ongoing</div><h3>NSE4 Lab — FortiGate VM</h3><p>Self-built FCP study lab in EVE-NG. Practising firewall policies, IPsec/SSL VPN, SD-WAN, IPS profiles.</p><div class="ptags"><span class="ptag">FortiGate VM</span><span class="ptag">EVE-NG</span><span class="ptag">SD-WAN</span></div></div>
-      <div class="pj"><div class="pj-num">05</div><div class="pj-st sd">resolved</div><h3>UAT2 Nginx 504 Debug</h3><p>Traced 504 Gateway Timeout through Nginx upstream, Sails.js, and Tomcat backend. Resolved upstream config &amp; PM2 state.</p><div class="ptags"><span class="ptag">Nginx</span><span class="ptag">Sails.js</span><span class="ptag">Tomcat</span></div></div>
-      <div class="pj"><div class="pj-num">06</div><div class="pj-st sw">ongoing</div><h3>Personal Brand Portfolio</h3><p>This website — dark-first, Syne + JetBrains Mono typography, Vaulk-style animations. Deployed on GitHub Pages.</p><div class="ptags"><span class="ptag">HTML/CSS/JS</span><span class="ptag">GitHub Pages</span><span class="ptag">UI/UX</span></div></div>
+
+      <div class="pj" onclick="togProj(this)">
+        <div class="pj-num">01</div><div class="pj-st sl">live</div>
+        <h3>Cloudflare DR DNS Failover <span class="pj-arrow">›</span></h3>
+        <p>Automatic DNS failover for Rakuten Trade DR site using Cloudflare Load Balancer with health checks and geo-routing.</p>
+        <div class="ptags"><span class="ptag">Cloudflare</span><span class="ptag">DNS</span><span class="ptag">BCP/DR</span></div>
+        <div class="pj-expand">
+          <p>Architected failover logic using Cloudflare Load Balancer with health check monitors on primary and DR origin servers. Configured geo-routing policies to ensure Malaysian traffic stays local. Integrated with Rakuten Trade BCP runbook.</p>
+          <p><strong style="font-size:12px;color:var(--text)">Outcome:</strong> RTO reduced, automatic failover tested successfully in DR drill.</p>
+        </div>
+      </div>
+
+      <div class="pj" onclick="togProj(this)">
+        <div class="pj-num">02</div><div class="pj-st sl">ongoing</div>
+        <h3>WAF Monitoring &amp; Tuning <span class="pj-arrow">›</span></h3>
+        <p>Ongoing WAF rule management, log analysis, and security profile tuning across KEMP ModSecurity and Cloudflare WAF environments.</p>
+        <div class="ptags"><span class="ptag">KEMP WAF</span><span class="ptag">ModSecurity</span><span class="ptag">Cloudflare WAF</span><span class="ptag">Log Analysis</span></div>
+        <div class="pj-expand">
+          <p>Day-to-day WAF operations including rule review, false positive tuning, threshold adjustments, and periodic security profile updates. Monitoring traffic patterns, analysing WAF logs for anomalies, and maintaining rule sets aligned with OWASP Top 10.</p>
+          <p><strong style="font-size:12px;color:var(--text)">Scope:</strong> KEMP WAF (ModSecurity), Cloudflare WAF custom rules, security event monitoring.</p>
+        </div>
+      </div>
+
+      <div class="pj" onclick="togProj(this)">
+        <div class="pj-num">03</div><div class="pj-st sw">ongoing</div>
+        <h3>PortSwigger Web Security Labs <span class="pj-arrow">›</span></h3>
+        <p>Working through PortSwigger Academy — SQL injection, auth bypass, XSS, IDOR, SSRF with Burp Suite.</p>
+        <div class="ptags"><span class="ptag">Burp Suite</span><span class="ptag">SQLi</span><span class="ptag">XSS</span></div>
+        <div class="pj-expand">
+          <p>Actively completing PortSwigger Web Security Academy labs using Burp Suite Community. Topics covered: SQL injection (UNION, blind, error-based), authentication bypass, stored/reflected XSS, IDOR, and SSRF. Targeting BSCP certification path.</p>
+          <a class="pj-link" href="https://portswigger.net/web-security" target="_blank" rel="noopener">View PortSwigger Academy →</a>
+        </div>
+      </div>
+
+      <div class="pj" onclick="togProj(this)">
+        <div class="pj-num">04</div><div class="pj-st sw">ongoing</div>
+        <h3>NSE4 Lab — FortiGate VM <span class="pj-arrow">›</span></h3>
+        <p>Self-built FCP study lab in EVE-NG. Practising firewall policies, IPsec/SSL VPN, SD-WAN, IPS profiles.</p>
+        <div class="ptags"><span class="ptag">FortiGate VM</span><span class="ptag">EVE-NG</span><span class="ptag">SD-WAN</span></div>
+        <div class="pj-expand">
+          <p>Built isolated FortiGate VM lab topology in EVE-NG Community with simulated WAN/LAN segments. Practising: firewall policy configuration, IPsec site-to-site VPN, SSL VPN, SD-WAN rules, IPS/AV security profiles, and log analysis via FortiAnalyzer.</p>
+          <a class="pj-link" href="https://training.fortinet.com" target="_blank" rel="noopener">Fortinet Training Portal →</a>
+        </div>
+      </div>
+
+      <div class="pj" onclick="togProj(this)">
+        <div class="pj-num">05</div><div class="pj-st sd">resolved</div>
+        <h3>UAT2 Nginx 504 Debug <span class="pj-arrow">›</span></h3>
+        <p>Traced 504 Gateway Timeout through Nginx upstream, Sails.js, and Tomcat backend.</p>
+        <div class="ptags"><span class="ptag">Nginx</span><span class="ptag">Sails.js</span><span class="ptag">Tomcat</span></div>
+        <div class="pj-expand">
+          <p>Production UAT environment returning 504. Traced issue: Nginx upstream config had commented-out backend servers, Sails.js PM2 process was not running on port 4000, Tomcat/Spring Boot upstream misconfigured. Resolved by restoring upstream entries and restarting PM2 cluster.</p>
+          <p><strong style="font-size:12px;color:var(--text)">Root cause:</strong> Stale upstream config post-deployment.</p>
+        </div>
+      </div>
+
+      <div class="pj" onclick="togProj(this)">
+        <div class="pj-num">06</div><div class="pj-st sw">ongoing</div>
+        <h3>Personal Brand Portfolio <span class="pj-arrow">›</span></h3>
+        <p>This website — dark-first, Syne + JetBrains Mono, Vaulk-style animations. Deployed on GitHub Pages.</p>
+        <div class="ptags"><span class="ptag">HTML/CSS/JS</span><span class="ptag">GitHub Pages</span><span class="ptag">UI/UX</span></div>
+        <div class="pj-expand">
+          <p>Built from scratch using pure HTML, CSS, and vanilla JS — no frameworks. Features: Vaulk-style loader, WatchHouse editorial hero, DOSS cert table, ownitt.fr magnetic cursor, Floema language switcher (EN/BM), dark/light mode, full mobile responsiveness.</p>
+          <a class="pj-link" href="https://oxawwal.github.io" target="_blank" rel="noopener">View Live Site →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<hr>
+
+<!-- LANGUAGES + BEYOND THE CLI -->
+<section id="personal">
+  <div class="container">
+    <div class="personal-grid">
+
+      <!-- LANGUAGES -->
+      <div class="rev-l">
+        <div class="eyebrow">Languages</div>
+        <h2 class="sh" style="margin-bottom:28px" data-key="lang_h">Spoken Languages</h2>
+        <div class="lang-list">
+          <div class="lang-item">
+            <div class="lang-flag">🇲🇾</div>
+            <div class="lang-info">
+              <div class="lang-name">Bahasa Melayu</div>
+              <div class="lang-level">Native · Ibunda</div>
+            </div>
+            <div class="lang-bar-wrap">
+              <div class="lang-bar-fill" style="width:100%"></div>
+            </div>
+            <div class="lang-pct">Native</div>
+          </div>
+          <div class="lang-item">
+            <div class="lang-flag">🇬🇧</div>
+            <div class="lang-info">
+              <div class="lang-name">English</div>
+              <div class="lang-level">Professional · Technical</div>
+            </div>
+            <div class="lang-bar-wrap">
+              <div class="lang-bar-fill" style="width:88%"></div>
+            </div>
+            <div class="lang-pct">Pro</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BEYOND THE CLI (hobbies) -->
+      <div class="rev-r">
+        <div class="eyebrow">Beyond the CLI</div>
+        <h2 class="sh" style="margin-bottom:28px" data-key="hobby_h">When I'm not in the terminal</h2>
+        <div class="hobby-grid">
+          <div class="hobby-card">
+            <div class="hobby-ico">📚</div>
+            <div class="hobby-name" data-key="hobby_read">Reading</div>
+            <div class="hobby-desc" data-key="hobby_read_desc">Tech books, cybersecurity writeups & geopolitics. Currently reading: "The Art of Invisibility"</div>
+          </div>
+          <div class="hobby-card">
+            <div class="hobby-ico">🏃</div>
+            <div class="hobby-name" data-key="hobby_jog">Jogging</div>
+            <div class="hobby-desc" data-key="hobby_jog_desc">Early morning runs — best way to debug life. Music on, problems off.</div>
+          </div>
+          <div class="hobby-card">
+            <div class="hobby-ico">🎵</div>
+            <div class="hobby-name" data-key="hobby_music">Music</div>
+            <div class="hobby-desc" data-key="hobby_music_desc">Always in the background — whether deploying configs or debugging at 2AM. Noise-cancelling on = focus mode activated.</div>
+          </div>
+          <div class="hobby-card">
+            <div class="hobby-ico">🏸</div>
+            <div class="hobby-name" data-key="hobby_badminton">Badminton</div>
+            <div class="hobby-desc" data-key="hobby_badminton_desc">Weekend warrior. Same precision as firewall rule config, just with a racket.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <hr>
 
@@ -730,7 +935,8 @@ footer{padding:26px 40px;border-top:1px solid var(--border);display:flex;justify
 /* ── TRANSLATIONS ── */
 const T={
   en:{
-    nav_about:"About",nav_stack:"Stack",nav_exp:"Experience",nav_certs:"Certs",nav_proj:"Labs",nav_contact:"Contact",nav_hire:"Hire me",
+    nav_about:"About",nav_stack:"Stack",nav_exp:"Experience",nav_certs:"Certs",nav_proj:"Labs",nav_contact:"Contact",nav_edu:"Edu",
+    nav_about2:"About",nav_hire:"Hire me",
     hero_eyebrow:"IT · Network · Cybersecurity · Cloud · KL, Malaysia 🇲🇾",
     hero_role_big:"IT Infrastructure Engineer",hero_role_main:"IT Infrastructure Engineer",
     hero_role_sub:"Network & Cybersecurity & Cloud",hero_avail:"Open to opportunities",
@@ -744,9 +950,17 @@ const T={
     ct_ey:"Contact",ct_h:"Let's connect",ct_desc:"Based in Kuala Lumpur, Malaysia. Open to senior IT infrastructure, network security, or cloud security roles. Also available for freelance network consultancy.",
     cv_label:"resume",cv_val:"Download CV (PDF)",cv_note:"// Place Awwal_CV.pdf in the same folder as index.html to enable download.",
     footer_r:"Built with ☕ & too much terminal time",
+    edu_h:"Academic Background",
+    lang_h:"Spoken Languages",
+    hobby_h:"When I'm not in the terminal",
+    hobby_read:"Reading",hobby_read_desc:'Tech books, cybersecurity writeups & geopolitics. Currently: "The Art of Invisibility"',
+    hobby_jog:"Jogging",hobby_jog_desc:"Early morning runs — best way to debug life. Music on, problems off.",
+    hobby_music:"Music",hobby_music_desc:"Always in the background — deploying configs or debugging at 2AM. Noise-cancelling on = focus mode.",
+    hobby_badminton:"Badminton",hobby_badminton_desc:"Weekend warrior. Same precision as firewall rule config, just with a racket.",
   },
   bm:{
-    nav_about:"Tentang",nav_stack:"Teknologi",nav_exp:"Pengalaman",nav_certs:"Sijil",nav_proj:"Projek",nav_contact:"Hubungi",nav_hire:"Hubungi Saya",
+    nav_about:"Tentang",nav_stack:"Teknologi",nav_exp:"Pengalaman",nav_certs:"Sijil",nav_proj:"Projek",nav_contact:"Hubungi",nav_edu:"Pelajaran",
+    nav_about2:"Tentang",nav_hire:"Hubungi Saya",
     hero_eyebrow:"IT · Rangkaian · Keselamatan Siber · Awan · KL, Malaysia 🇲🇾",
     hero_role_big:"Jurutera Infrastruktur IT",hero_role_main:"Jurutera Infrastruktur IT",
     hero_role_sub:"Rangkaian & Keselamatan Siber & Awan",hero_avail:"Terbuka untuk peluang",
@@ -760,6 +974,13 @@ const T={
     ct_ey:"Hubungi",ct_h:"Mari berhubung",ct_desc:"Berpusat di Kuala Lumpur, Malaysia. Terbuka untuk peranan jurutera infrastruktur IT kanan, keselamatan rangkaian, atau keselamatan awan. Juga tersedia untuk perundingan rangkaian bebas.",
     cv_label:"resume",cv_val:"Muat Turun CV (PDF)",cv_note:"// Letakkan Awwal_CV.pdf dalam folder yang sama dengan index.html untuk membolehkan muat turun.",
     footer_r:"Dibina dengan ☕ & terlalu banyak masa terminal",
+    edu_h:"Latar Belakang Akademik",
+    lang_h:"Bahasa yang Dituturkan",
+    hobby_h:"Bila tidak di terminal",
+    hobby_read:"Membaca",hobby_read_desc:'Buku teknologi, penulisan keselamatan siber & geopolitik. Sedang baca: "The Art of Invisibility"',
+    hobby_jog:"Berjoging",hobby_jog_desc:"Larian awal pagi — cara terbaik debug kehidupan. Muzik on, masalah off.",
+    hobby_music:"Muzik",hobby_music_desc:"Sentiasa bermain — sama ada deploy config atau debug pada pukul 2 pagi. Noise-cancelling on = mod fokus.",
+    hobby_badminton:"Badminton",hobby_badminton_desc:"Warrior hujung minggu. Ketepatan sama seperti config firewall rule, cuma guna raket.",
   }
 };
 let lang="en";
@@ -781,7 +1002,7 @@ document.addEventListener("click",e=>{if(!e.target.closest("#langWrap"))document
 
 /* ── CERT DATA ── */
 const CERTS=[
-  {id:"nse13",v:"Fortinet",n:"NSE 1–3",lv:"Foundation",fee:0,tot:"FREE",dur:"1–3 days",diff:1,li:3,job:5,st:"done",why:"Fortinet security awareness & associate concepts. 100% free at training.fortinet.com. Foundation for NSE4 / FCP path.",url:"https://training.fortinet.com",c:"#e05c1a"},
+  {id:"nse13",v:"Fortinet",n:"NSE 1–3",lv:"Foundation",fee:0,tot:"FREE",dur:"1–3 days",diff:1,li:3,job:5,st:"done",why:"Fortinet security awareness & associate concepts. 100% free at training.fortinet.com. Foundation for NSE4 / FCP path.",url:"https://training.fortinet.com",c:"#e05c1a",credly:"https://www.credly.com/users/awwal-mukhzar"},
   {id:"nse4",v:"Fortinet",n:"FCP / NSE4",lv:"Professional",fee:400,tot:"~$400",dur:"2–3 months",diff:3,li:4,job:5,st:"in-progress",why:"Core FortiGate cert (2 exams × $200). Covers firewall policies, IPsec/SSL VPN, SD-WAN, IPS, web filtering. Direct daily relevance at Rakuten Trade.",url:"https://training.fortinet.com",c:"#e05c1a"},
   {id:"fcss",v:"Fortinet",n:"FCSS / NSE7",lv:"Senior",fee:400,tot:"~$400",dur:"3–4 months",diff:4,li:4,job:4,st:"future",why:"Senior Fortinet level. Advanced security architecture, Zero Trust, advanced SD-WAN. After FCP completed.",url:"https://training.fortinet.com",c:"#e05c1a"},
   {id:"az900",v:"Microsoft",n:"AZ-900",lv:"Foundation",fee:99,tot:"~$99",dur:"2–3 weeks",diff:1,li:3,job:3,st:"next",why:"Azure fundamentals. Cheapest Microsoft cert. Free voucher from MS Virtual Training Days — aka.ms/VirtualTrainingDays.",url:"https://learn.microsoft.com/credentials/certifications/azure-fundamentals/",c:"#0078d4"},
@@ -841,7 +1062,10 @@ function render(){
         <div><div class="blab"><span>linkedin_visibility</span><span>${c.li}/5</span></div><div class="btrack"><div class="bfill" style="width:${c.li*20}%;background:${c.c}"></div></div></div>
         <div><div class="blab"><span>job_relevance</span><span>${c.job}/5</span></div><div class="btrack"><div class="bfill" style="width:${c.job*20}%;background:var(--orange)"></div></div></div>
       </div>
-      <a class="cx-link" href="${c.url}" target="_blank" rel="noopener">Open official page →</a>
+      <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+        <a class="cx-link" href="${c.url}" target="_blank" rel="noopener">Open official page →</a>
+        ${c.credly ? '<a class="cr-credly" href="' + c.credly + '" target="_blank" rel="noopener">🏅 View on Credly →</a>' : ''}
+      </div>
     </div>`).join("");
 }
 function togC(id){cC=cC===id?null:id;render();}
@@ -935,6 +1159,30 @@ window.addEventListener("scroll",()=>{
 
 // Apply lang to mob nav too
 const _origSetLang=setLang;
+
+/* ── EXPANDABLE PROJECTS ── */
+function togProj(el){
+  const wasOpen = el.classList.contains('open');
+  document.querySelectorAll('.pj.open').forEach(p => p.classList.remove('open'));
+  if(!wasOpen) el.classList.add('open');
+}
+
+
+/* ── ANTI-COPY DETERRENT (soft) ── */
+// Disable right-click context menu
+document.addEventListener('contextmenu', e => e.preventDefault());
+// Disable Ctrl+U, Ctrl+S, Ctrl+A, F12 (soft deterrent)
+document.addEventListener('keydown', e => {
+  if(
+    (e.ctrlKey && ['u','s','a'].includes(e.key.toLowerCase())) ||
+    e.key === 'F12'
+  ){e.preventDefault();}
+});
+// Watermark in console
+console.clear();
+console.log('%c0xawwal', 'font-size:48px;font-weight:900;color:#FF9500;font-family:Syne,sans-serif');
+console.log('%cMuhammad Awwal bin Mukhzar — IT Infrastructure Engineer', 'font-size:12px;color:#888');
+console.log("%c\u26a0\ufe0f If you're here to copy - build your own instead \ud83d\udcaa", "font-size:11px;color:#ef4444");
 
 /* ── YEAR + INIT ── */
 document.getElementById("yr").textContent=new Date().getFullYear();
